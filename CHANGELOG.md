@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/nejcm/js-library-boilerplate/compare/v1.0.0...v1.0.1) (2020-03-14)
+
+
+### Bug Fixes
+
+* fixed test build ([9f17a3b](https://github.com/nejcm/js-library-boilerplate/commit/9f17a3bb2665eb9bfab6fe24a826b1600984a384))
+
 # 1.0.0 (2020-03-14)
 
 
