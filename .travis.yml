@@ -3,20 +3,41 @@ cache: npm
 notifications:
   email: false
 node_js:
-  - 10.14
-  - 12
+  - lts/*
   - node
 install: npm install
-script:
-  - npm run validate
-  - npx codecov@3
 branches:
-  only: master
+  only:
+    - master
+    - next
+    - beta
+    - alpha
 
 jobs:
   include:
+    - stage: testing
+      #if: branch in (master, develop)
+      node_js: lts/*
+      env:
+        - TEST=test
+      script:
+        - npm run validate
+      after_success:
+        - mv coverage/coverage-final.json coverage/coverage.json
+        - codecov
+
     - stage: release
-      node_js: 12
+      # if: branch = master AND commit_message =~ /^[0-9]*\.[0-9]*\.[0-9]*$/
+      if: branch = master
+      node_js: lts/*
       script:
         - npm run build
-        - npm run release
+      after_success:
+        - echo "Deploying to npm ..."
+        - npm run semantic-release
+      #deploy:
+      #provider: npm
+      #email: $NPM_EMAIL
+      #api_key: $NPM_TOKEN
+      #cleanup: true
+      #tags: true

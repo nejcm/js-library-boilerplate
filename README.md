@@ -41,19 +41,19 @@
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
-- [Features](#⭐️-features)
-- [Getting started](#📦-getting-started)
+- [Features](#%EF%B8%8F-features)
+- [Getting started](#-getting-started)
 - [Installation](#installation)
-- [Customization](#💎-customization)
+- [Customization](#-customization)
 - [Configuration](#configuration)
-- [Deployment](#🚀-deployment)
+- [Deployment](#-deployment)
 - [Versioning](#versioning)
 - [Tests](#tests)
 - [Style guide](#style-guide)
 - [Issues](#issues)
-  - [🐛 Bugs](#🐛-bugs)
-  - [💡 Feature Requests](#💡-feature-requests)
-  - [❓ Questions](#❓-questions)
+  - [🐛 Bugs](#-bugs)
+  - [💡 Feature Requests](#-feature-requests)
+  - [❓ Questions](#-questions)
 - [Authors](#authors)
 - [Contributors](#contributors)
 - [Support](#support)
@@ -160,7 +160,7 @@ instead of filing an issue on GitHub.
 
 <table>
   <tr>
-    <td align="center"><a href="https://github.com/nejcm"><img src="https://avatars3.githubusercontent.com/u/1865210?v=3" width="100px" alt="Nejc"/><br /><sub><b>Nejc Muršič</b></sub></a><br /><a href="https://github.com/nejcm/react-boilerplate/commits?author=nejcm" title="Code">💻</a> <a href="https://github.com/nejcm/react-boilerplate/commits?author=nejcm" title="Documentation">📖</a> <a href="#infra" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="https://github.com/nejcm/react-boilerplate/commits?author=nejcm" title="Tests">⚠️</a></td>
+    <td align="center"><a href="https://github.com/nejcm"><img src="https://avatars3.githubusercontent.com/u/1865210?v=3" width="100px" alt="Nejc"/><br /><sub><b>Nejc Muršič</b></sub></a><br /><a href="https://github.com/nejcm/js-library-boilerplate/commits?author=nejcm" title="Code">💻</a> <a href="https://github.com/nejcm/js-library-boilerplate/commits?author=nejcm" title="Documentation">📖</a> <a href="#infra" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="https://github.com/nejcm/js-library-boilerplate/commits?author=nejcm" title="Tests">⚠️</a></td>
   </tr>
 </table>
 

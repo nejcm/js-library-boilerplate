@@ -1,5 +1,5 @@
 {
-  "name": "js-library-boilerplate",
+  "name": "@nejcm/js-library-boilerplate",
   "version": "0.0.0-semantically-released",
   "author": "Nejc Mursic <nmursi2@gmail.com> (https://github.com/nejcm)",
   "description": "Starter kit for your js library projects",
@@ -12,12 +12,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/nejcm/react-library-boilerplate"
+    "url": "https://github.com/nejcm/js-library-boilerplate"
   },
   "bugs": {
-    "url": "https://github.com/nejc/react-library-boilerplate/issues"
+    "url": "https://github.com/nejc/js-library-boilerplate/issues"
   },
-  "homepage": "https://github.com/nejcm/react-library-boilerplate",
+  "homepage": "https://github.com/nejcm/js-library-boilerplate",
   "engines": {
     "node": ">=8",
     "npm": ">=5"
@@ -33,6 +33,7 @@
   ],
   "scripts": {
     "storybook": "start-storybook -p 9001 -c .storybook",
+    "format": "prettier ./src/**/*.js --write",
     "clean": "rimraf dist coverage",
     "lint": "eslint ./src",
     "lint:fix": "eslint ./src --fix",
@@ -45,10 +46,9 @@
     "postdocs:build": "cpy \"**/*\" ../../.docz/dist --cwd=\"other/public\" --parents",
     "docs:serve": "serve ./.docz/dist --listen 6006 --single",
     "build": "npm run clean && rollup -c",
-    "validate": "lint-staged && npm run test:build",
+    "validate": "npm run format && npm run lint && npm run test:build",
     "setup": "npm install && npm run validate",
-    "publish": "npm publish",
-    "release": "semantic-release"
+    "semantic-release": "semantic-release"
   },
   "husky": {
     "hooks": {
@@ -63,6 +63,12 @@
   "devDependencies": {
     "@babel/helpers": "^7.4.4",
     "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@semantic-release/changelog": "^5.0.0",
+    "@semantic-release/git": "^9.0.0",
+    "@semantic-release/github": "^7.0.4",
+    "@semantic-release/commit-analyzer": "^8.0.1",
+    "@semantic-release/release-notes-generator": "^9.0.1",
+    "@semantic-release/npm": "^7.0.4",
     "@storybook/addon-actions": "^5.3.14",
     "storybook-addon-jsx": "^7.1.14",
     "@storybook/addon-knobs": "^5.3.14",
