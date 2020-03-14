@@ -35,9 +35,3 @@ jobs:
       after_success:
         - echo "Deploying to npm ..."
         - npm run semantic-release
-      #deploy:
-      #provider: npm
-      #email: $NPM_EMAIL
-      #api_key: $NPM_TOKEN
-      #cleanup: true
-      #tags: true
