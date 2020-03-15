@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/nejcm/js-library-boilerplate/compare/v1.0.2...v1.0.3) (2020-03-15)
+
+
+### Bug Fixes
+
+* fixed travis badge url ([8a01443](https://github.com/nejcm/js-library-boilerplate/commit/8a01443d025157810df8cb95f8375d616fc84941))
+
 ## [1.0.2](https://github.com/nejcm/js-library-boilerplate/compare/v1.0.1...v1.0.2) (2020-03-15)
 
 
