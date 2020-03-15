@@ -200,7 +200,7 @@ Reach out to us at one of the following places:
 [all-contributors]: https://github.com/all-contributors/all-contributors
 [bugs]: https://github.com/nejcm/js-library-boilerplate/issues?q=is%3Aissue+is%3Aopen+label%3Abug+sort%3Acreated-desc
 [build-badge]: https://img.shields.io/travis/nejcm/js-library-boilerplate.svg
-[build]: https://travis-ci.org/nejcm/js-library-boilerplate
+[build]: https://travis-ci.com/nejcm/js-library-boilerplate
 [coc-badge]: https://img.shields.io/badge/code%20of-conduct-ff69b4.svg
 [coc]: https://github.com/nejcm/js-library-boilerplate/blob/master/CODE_OF_CONDUCT.md
 [coverage-badge]: https://img.shields.io/codecov/c/github/nejcm/js-library-boilerplate.svg
