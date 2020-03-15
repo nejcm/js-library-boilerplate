@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/nejcm/js-library-boilerplate/compare/v1.0.1...v1.0.2) (2020-03-15)
+
+
+### Bug Fixes
+
+* fixed travis url ([02a6b29](https://github.com/nejcm/js-library-boilerplate/commit/02a6b29f8d7a0ab64a9c25f0bc763dd966b77df7))
+
 ## [1.0.1](https://github.com/nejcm/js-library-boilerplate/compare/v1.0.0...v1.0.1) (2020-03-14)
 
 
