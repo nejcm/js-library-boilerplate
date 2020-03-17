@@ -3,10 +3,15 @@ import commonjs from 'rollup-plugin-commonjs';
 import filesize from 'rollup-plugin-filesize';
 import resolve from 'rollup-plugin-node-resolve';
 import replace from 'rollup-plugin-replace';
+import sass from 'rollup-plugin-sass';
 import { uglify } from 'rollup-plugin-uglify';
 import pkg from './package.json';
 
 const external = (id) => !id.startsWith('.') && !id.startsWith('/');
+
+const scssConfig = sass({
+  insert: true
+});
 
 const babelConfig = (
   {useESModules, targets} = {
@@ -63,6 +68,7 @@ const umdConfig = ({minify} = {}) => ({
     }),
     commonjs(),
     minify ? uglify() : { },
+    scssConfig,
     filesize(),
   ],
 });
@@ -77,7 +83,7 @@ const rollupConfig = [
     input: pkg.source,
     external,
     output: [{file: pkg.main, format: 'cjs'}],
-    plugins: [resolve(), babel(babelConfig({useESModules: false})), filesize()],
+    plugins: [resolve(), babel(babelConfig({useESModules: false})), scssConfig, filesize()],
   },
 
   // ES module
@@ -85,7 +91,7 @@ const rollupConfig = [
     input: pkg.source,
     external,
     output: [{file: pkg.module, format: 'esm'}],
-    plugins: [resolve(), babel(babelConfig()), filesize()],
+    plugins: [resolve(), babel(babelConfig()), scssConfig, filesize()],
   },
 ];
 
