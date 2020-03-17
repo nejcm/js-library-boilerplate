@@ -88,8 +88,16 @@
 This module is distributed via [npm][npm] which is bundled with [node][node].
 
 ```shell
+
+# clone project
 git clone https://github.com/nejcm/js-library-boilerplate.git my-project
+
+# move into project
+cd my-project
+
+# install deps
 npm install
+
 ```
 
 
