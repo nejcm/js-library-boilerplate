@@ -1,3 +1,5 @@
+import autoprefixer from 'autoprefixer';
+import postcss from 'postcss';
 import babel from 'rollup-plugin-babel';
 import commonjs from 'rollup-plugin-commonjs';
 import filesize from 'rollup-plugin-filesize';
@@ -5,13 +7,17 @@ import resolve from 'rollup-plugin-node-resolve';
 import replace from 'rollup-plugin-replace';
 import sass from 'rollup-plugin-sass';
 import { uglify } from 'rollup-plugin-uglify';
+// eslint-disable-next-line import/extensions
 import pkg from './package.json';
 
-const external = (id) => !id.startsWith('.') && !id.startsWith('/');
+const external = (id) => (!id.startsWith('.') && !id.startsWith('/')) || id.endsWith('.css');
 
-const scssConfig = sass({
-  insert: true
-});
+const stylesConfig = {
+  output: 'dist/bundle.css',
+  processor: (css) => postcss([autoprefixer])
+    .process(css)
+    .then((result) => result.css)
+}
 
 const babelConfig = (
   {useESModules, targets} = {
@@ -38,7 +44,7 @@ const babelConfig = (
     ['babel-plugin-transform-async-to-promises', {inlineHelpers: true}],
     'babel-plugin-minify-dead-code-elimination',
   ],
-  exclude: 'node_modules/**',
+  exclude: ['node_modules/**', '*.css'],
 });
 
 const umdConfig = ({minify} = {}) => ({
@@ -46,7 +52,7 @@ const umdConfig = ({minify} = {}) => ({
   external: ['react', 'react-dom', 'prop-types'],
   output: {
     name: pkg.name,
-    file: minify ? pkg["umd:main"].replace('.js', '.min.js') : pkg["umd:main"],
+    file: minify ? pkg['umd:main'].replace('.js', '.min.js') : pkg['umd:main'],
     format: 'umd',
     globals: {
       react: 'React',
@@ -55,6 +61,7 @@ const umdConfig = ({minify} = {}) => ({
     },
   },
   plugins: [
+    sass(stylesConfig),
     resolve(),
     babel(
       babelConfig({
@@ -68,7 +75,6 @@ const umdConfig = ({minify} = {}) => ({
     }),
     commonjs(),
     minify ? uglify() : { },
-    scssConfig,
     filesize(),
   ],
 });
@@ -83,7 +89,12 @@ const rollupConfig = [
     input: pkg.source,
     external,
     output: [{file: pkg.main, format: 'cjs'}],
-    plugins: [resolve(), babel(babelConfig({useESModules: false})), scssConfig, filesize()],
+    plugins: [
+      sass(stylesConfig),
+      resolve(),
+      babel(babelConfig({useESModules: false})),
+      filesize()
+    ],
   },
 
   // ES module
@@ -91,7 +102,12 @@ const rollupConfig = [
     input: pkg.source,
     external,
     output: [{file: pkg.module, format: 'esm'}],
-    plugins: [resolve(), babel(babelConfig()), scssConfig, filesize()],
+    plugins: [
+      sass(stylesConfig),
+      resolve(),
+      babel(babelConfig()),
+      filesize()
+    ],
   },
 ];
 
