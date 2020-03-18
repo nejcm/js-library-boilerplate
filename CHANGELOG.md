@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/nejcm/js-library-boilerplate/compare/v1.1.0...v1.2.0) (2020-03-18)
+
+
+### Features
+
+* added sass support ([9309b57](https://github.com/nejcm/js-library-boilerplate/commit/9309b57bea2cf290f4f541d255e34324cabd4e4c))
+
 # [1.1.0](https://github.com/nejcm/js-library-boilerplate/compare/v1.0.3...v1.1.0) (2020-03-18)
 
 
