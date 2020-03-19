@@ -1,3 +1,10 @@
+## [1.2.2](https://github.com/nejcm/js-library-boilerplate/compare/v1.2.1...v1.2.2) (2020-03-19)
+
+
+### Bug Fixes
+
+* added back prop-types dep ([6f261c7](https://github.com/nejcm/js-library-boilerplate/commit/6f261c7aae90ebe8c9546ff70d49b7659c415772))
+
 ## [1.2.1](https://github.com/nejcm/js-library-boilerplate/compare/v1.2.0...v1.2.1) (2020-03-19)
 
 
