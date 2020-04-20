@@ -1,18 +1,6 @@
-# JS library boilerplate
-<blockquote>Starter kit for your js library projects</blockquote>
+# 📦 JS library boilerplate
+<blockquote>Starter kit for your js library projects.</blockquote>
 <br />
-
-<a href="https://www.joypixels.com/profiles/emoji/package">
-  <img
-    height="128"
-    width="128"
-    alt="package"
-    src="https://d1j8pt39hxlh3d.cloudfront.net/emoji/emojione/5.5/png/unicode/128/1f4e6.png?192038471"
-  />
-</a>
-<br />
-<br />
-
 
 <!-- prettier-ignore-start -->
 [![NPM][npm-badge]][npm-link] 

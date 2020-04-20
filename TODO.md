@@ -1,6 +1,7 @@
 # Backlog
 
-- [] Example task #1
+- [] Task example #1
+- [] Task example #2
 
 # In progress
 

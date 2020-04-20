@@ -6,13 +6,12 @@
 <!-- Logo -->
 <a href="https://www.joypixels.com/profiles/emoji/package">
   <img
-    height="128"
-    width="128"
+    height="100"
+    width="100"
     alt="package"
-    src="https://d1j8pt39hxlh3d.cloudfront.net/emoji/emojione/5.5/png/unicode/128/1f4e6.png?192038471"
+    src="https://d1j8pt39hxlh3d.cloudfront.net/emoji/emojione/5.5/png/unicode/128/1f4e6.png"
   />
 </a>
-<br />
 <br />
 
 <!-- prettier-ignore-start -->
