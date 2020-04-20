@@ -1,3 +1,10 @@
+## [1.2.3](https://github.com/nejcm/js-library-boilerplate/compare/v1.2.2...v1.2.3) (2020-04-19)
+
+
+### Bug Fixes
+
+* fixed travis build issue ([9e1bc73](https://github.com/nejcm/js-library-boilerplate/commit/9e1bc730ec1831bcc1e6d7556c5987cb42038dae))
+
 ## [1.2.2](https://github.com/nejcm/js-library-boilerplate/compare/v1.2.1...v1.2.2) (2020-03-19)
 
 
