@@ -1,3 +1,10 @@
+## [1.2.4](https://github.com/nejcm/js-library-boilerplate/compare/v1.2.3...v1.2.4) (2020-04-20)
+
+
+### Bug Fixes
+
+* fixed build and replaced rollup config with kcd-scripts ([91658a1](https://github.com/nejcm/js-library-boilerplate/commit/91658a1cf1b0deca53758bb20f40ec56ae9e93a1))
+
 ## [1.2.3](https://github.com/nejcm/js-library-boilerplate/compare/v1.2.2...v1.2.3) (2020-04-19)
 
 
