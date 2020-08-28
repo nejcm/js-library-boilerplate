@@ -1,3 +1,5 @@
+# ⚠️ This repo was moved into [project-boilerplates](https://github.com/nejcm/project-boilerplates)
+
 # 📦 JS library boilerplate
 <blockquote>Starter kit for your js library projects.</blockquote>
 <br />
